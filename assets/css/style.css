@@ -3,6 +3,7 @@ header
     background-color: #ffffff;
     width: 100%;
     display: block;
+    border-bottom: 1px solid #666666;
 }
 
 body
@@ -29,9 +30,8 @@ body
 nav
 {
     margin: 0;
-    display: inline-block;
     position: absolute;
-    right: 0px;
+    right: 18.5%;
     top: 0px;   
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,8 +41,6 @@ li
     list-style-type: none; 
     display: inline-block;
     padding: 15px;
-    position: relative;
-    top: -10px;
     right: 105%; 
     /*Trial and error to figure out the best position for the right (105%) - is there a better way?*/
 }
@@ -57,16 +55,14 @@ h1
     color: #4aaaa5;
     padding: 20px;
     background-color: #ffffff;
-    margin: 
+    
 }
 
-#contact-form
+hr
 {
-    text-decoration: none;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
+    position: relative;
+    top: -15px;
+    margin: 0 20px;
 }
 
 #form
@@ -74,26 +70,48 @@ h1
     background-color: #ffffff;
     width: 960px;
     margin: 0 auto;
+    height: 550px;
+}
+
+#contact-form 
+{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;  
+    position: relative;
+    right: 35px;
 }
 
 label
 {  
-    list-style-type: none;
+    list-style-type: none; 
+    display: block;
 }
 
-.submit
+input[type=text] input[type=email]
+{
+    /* Width = 960px - 40px (hr padding) */
+    width: 920px;
+}
+
+input[type=submit] /*Issue with altering the submit button*/
 {
     background-color: #4aaaa5;
-
+    color: #ffffff;
+    width: auto;
+    border: none;
+    position: relative;
+    left: 55px;
+    padding: 10px 25px;
+    font-size: 15px;
 }
 
 textarea
 {
-    height: 200px;
+    height: 150px;
     overflow: auto;
+    width: 920px;
 }
-
-.submit
 
 footer
 {
@@ -105,5 +123,6 @@ footer
     font-size: 10px;
     padding-top: 20px;
     position: absolute;
-    height: 20px;
+    bottom: 0;
+    border-top: 10px solid #4aaaa5;
 }
