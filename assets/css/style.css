@@ -1,128 +1,159 @@
-header
-{
-    background-color: #ffffff;
-    width: 100%;
-    display: block;
-    border-bottom: 1px solid #666666;
+header {
+  background-color: #ffffff;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #666666;
 }
 
-body
-{
-    margin: 0 auto;
-    background-image: url(../images/interlaced.png)
+body {
+  margin: 0 auto;
+  background-image: url(../images/interlaced.png);
+  overflow: auto;
 }
 
-.logo
-{
-    background-color: #4aaaa5;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px;
-    width: fit-content;
-    display: block;
-    position: relative;    
-    left: 18.5%; 
-    /*This 18.5% was trial and error again.*/
+.logo {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  width: fit-content;
+  display: block;
+  position: relative;
+  left: 18.5%;
+  /*This 18.5% was trial and error again.*/
 }
 
-nav
-{
-    margin: 0;
-    position: absolute;
-    right: 18.5%;
-    top: 0px;   
-    font-family: Arial, Helvetica, sans-serif;
+nav {
+  margin: 0;
+  position: absolute;
+  right: 18.5%;
+  top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-li
-{
-    list-style-type: none; 
-    display: inline-block;
-    padding: 15px;
-    right: 105%; 
-    /*Trial and error to figure out the best position for the right (105%) - is there a better way?*/
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+  right: 105%;
+  /*Trial and error to figure out the best position for the right (105%) - is there a better way?*/
 }
 
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-h1
-{
-    color: #4aaaa5;
-    padding: 20px;
-    background-color: #ffffff;
-    
+h1 {
+  color: #4aaaa5;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-hr
-{
-    position: relative;
-    top: -15px;
-    margin: 0 20px;
+hr {
+  position: relative;
+  top: -15px;
+  margin: 0 20px;
+  margin-bottom: 20px;
 }
 
-#form
-{
-    background-color: #ffffff;
-    width: 960px;
-    margin: 0 auto;
-    height: 550px;
+.container {
+  background-color: #ffffff;
+  width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
 }
 
-#contact-form 
-{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;  
-    position: relative;
-    right: 35px;
+#form {
+  background-color: #ffffff;
+  width: 960px;
+  margin: 0 auto;
+  height: 550px;
 }
 
-label
-{  
-    list-style-type: none; 
-    display: block;
+#contact-form {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: relative;
+  right: 35px;
 }
 
-input[type=text] input[type=email]
-{
-    /* Width = 960px - 40px (hr padding) */
-    width: 920px;
+label {
+  list-style-type: none;
+  display: block;
+}
+
+input[type="text"] input[type="email"] {
+  /* Width = 960px - 40px (hr padding) */
+  width: 920px;
 }
 
 input[type=submit] /*Issue with altering the submit button*/
-{
-    background-color: #4aaaa5;
-    color: #ffffff;
-    width: auto;
-    border: none;
-    position: relative;
-    left: 55px;
-    padding: 10px 25px;
-    font-size: 15px;
+ {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  width: auto;
+  border: none;
+  position: relative;
+  left: 55px;
+  padding: 10px 25px;
+  font-size: 15px;
 }
 
-textarea
-{
-    height: 150px;
-    overflow: auto;
-    width: 920px;
+textarea {
+  height: 150px;
+  overflow: auto;
+  width: 920px;
 }
 
-footer
-{
-    text-align: center;
-    background-color: #666666;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    color: #ffffff;
-    font-size: 10px;
-    padding-top: 20px;
-    position: absolute;
-    bottom: 0;
-    border-top: 10px solid #4aaaa5;
+#prof-image {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+}
+
+.port-pic {
+  position: relative;
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+}
+
+/*Having trouble putting text inline with the image*/
+#about-me {
+  position: relative;
+  top: 0px;
+  float: left;
+  display: inline;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  width: 246px;
+  text-align: center;
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+  bottom: 70px;
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  background-color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  color: #ffffff;
+  font-size: 10px;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  border-top: 8px solid #4aaaa5;
 }
