@@ -118,18 +118,18 @@ textarea {
 }
 
 .port-pic {
-  position: relative;
   float: left;
   width: 300px;
-  margin-left: 20px;
+  margin: 0 20px;
 }
 
-/*Having trouble putting text inline with the image*/
+/*Having trouble putting margin on the right of text*/
 #about-me {
-  position: relative;
-  top: 0px;
-  float: left;
   display: inline;
+  margin: 0 20;
+  position: relative;
+  left: 20px;
+  right: 20px;
 }
 
 h3 {
