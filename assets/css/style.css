@@ -63,9 +63,9 @@ hr {
   background-color: #ffffff;
   width: 960px;
   margin: 0 auto;
-  overflow: auto;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
+  height: 600px;
 }
 
 #form {
@@ -93,8 +93,7 @@ input[type="text"] input[type="email"] {
   width: 920px;
 }
 
-input[type=submit] /*Issue with altering the submit button*/
- {
+input[type="submit"] {
   background-color: #4aaaa5;
   color: #ffffff;
   width: auto;
@@ -119,17 +118,20 @@ textarea {
 
 .port-pic {
   float: left;
-  width: 300px;
   margin: 0 20px;
 }
 
-/*Having trouble putting margin on the right of text*/
+/*Having trouble putting margin on - so I put it on the html file*/
 #about-me {
   display: inline;
   margin: 0 20;
   position: relative;
   left: 20px;
-  right: 20px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 h3 {
